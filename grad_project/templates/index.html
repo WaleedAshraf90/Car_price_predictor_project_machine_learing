@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+  <style>
+
+   
+    .card-body{
+      color:white;
+      background-image:url("../static/body.jpg");
+      text-align: center;
+      font-size: 20px;
+    }
+    .card-header{
+      color: white;
+      text-align: center;
+     
+      font-size: 40px;
+      background-image:url("../static/head5.jpg");
+    }
+    .p{
+      background-image:url("../static/home_m.jpg");
+      background-repeat: no-repeat;
+      padding-top: 5px;
+      margin-top: 5px;
+      padding-bottom: -500px;
+      background-attachment: fixed;
+      background-size: cover;
+      background-size: 100% 100%;
+      padding: 500px ;
+    }
+    .pri
+    {
+     
+     
+       padding: 40px 32px;
+       text-align: center;
+       text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: max-content;
+}
+   
+  </style>
+  
+  <title>Predict the price of the car</title>
+  </head>
+  <body class=".bg-info">
+   
+
+    <div class="container">
+      <div class="row">
+        <div class="card-mt-50" >
+          <div class="card-header">
+          
+              <p>Welcome to Car Price Predictor</p>
+                <h6>This app predicts the Price of a car you want to sell .Try filling the details below</h6>
+            </div> 
+          </div> 
+          <div class="p">
+            
+          </div>
+          
+          
+      
+          <div class="card-body">    
+            <form method="post" >
+              {{ form.hidden_tag() }}
+              {{ form.Make.label }} {{form.Make(class="form-control")}}
+              {{ form.Model.label }} {{ form.Model(class="form-control")}}
+              {{ form.Used_since.label }} {{ form.Used_since(class="form-control")}}
+              {{ form.KM.label }} {{ form.KM(class="form-control")}}
+
+              {{ form.Transmission.label }} {{ form.Transmission(class="form-control")}}
+              {{ form.City.label }} {{ form.City(class="form-control")}}
+              {{ form.Color.label }} {{ form.Color(class="form-control")}}
+              {{ form.Fuel.label }} {{ form.Fuel(class="form-control")}}
+              {{ form.Leather_seats.label }} {{ form.Leather_seats(class="form-control")}}
+              {{ form.Closing_mirrors.label }} {{ form.Closing_mirrors(class="form-control")}}
+              {{ form.Intelligent_parking_system.label }} {{ form.Intelligent_parking_system(class="form-control")}}
+              {{ form.Sunroof.label }} {{ form.Sunroof(class="form-control")}}
+              {{ form.Fabric_brushes.label }} {{ form.Fabric_brushes(class="form-control")}}
+              {{ form.Air_Conditioning.label }} {{ form.Air_Conditioning(class="form-control")}}
+              {{ form.Power_Steering.label }} {{ form.Power_Steering(class="form-control")}}
+              {{ form.Remote_Keyless.label }} {{ form.Remote_Keyless(class="form-control")}}
+              {{ form.Electric_mirrors.label }} {{ form.Electric_mirrors(class="form-control")}}
+              {{ form.Front_Power_Windows.label }} {{ form.Front_Power_Windows(class="form-control")}}
+              {{ form.Back_Power_Windows.label }} {{ form.Back_Power_Windows(class="form-control")}}
+              {{ form.Tinted_Glass.label }} {{ form.Tinted_Glass(class="form-control")}}
+              {{ form.CD_Player.label }} {{ form.CD_Player(class="form-control")}}
+              {{ form.DVD_Player.label }} {{ form.DVD_Player(class="form-control")}}
+              {{ form.Bluetooth.label }} {{ form.Bluetooth(class="form-control")}}
+              {{ form.Multifunction.label }} {{ form.Multifunction(class="form-control")}}
+              {{ form.Cassette_Radio.label }} {{ form.Cassette_Radio(class="form-control")}}
+              {{ form.AUX.label }} {{ form.AUX(class="form-control")}}
+              {{ form.CD_Changer.label }} {{ form.CD_Changer(class="form-control")}}
+              {{ form.USB_Port.label }} {{ form.USB_Port(class="form-control")}}
+              {{ form.Anti_theft_System.label }} {{ form.Anti_theft_System(class="form-control")}}
+              {{ form.Side_Airbag.label }} {{ form.Side_Airbag(class="form-control")}}
+              {{ form.ABS.label }} {{ form.ABS(class="form-control")}}
+              {{ form.EPS.label }} {{ form.EPS(class="form-control")}}
+              {{ form.EBD.label }} {{ form.EBD(class="form-control")}}
+              {{ form.ESP.label }} {{ form.ESP(class="form-control")}}
+              {{ form.Sensors.label }} {{ form.Sensors(class="form-control")}}
+              {{ form.Rear_sensors.label }} {{ form.Rear_sensors(class="form-control")}}
+              {{ form.Driver_Airbag.label }} {{ form.Driver_Airbag(class="form-control")}}
+              {{ form.Passenger_Airbag.label }} {{ form.Passenger_Airbag(class="form-control")}}
+              {{ form.Front_sensors.label }} {{ form.Front_sensors(class="form-control")}}
+              {{ form.Alloy_wheels.label }} {{ form.Alloy_wheels(class="form-control")}}
+              {{ form.Rear_camera.label }} {{ form.Rear_camera(class="form-control")}}
+              {{ form.GPS.label }} {{ form.GPS(class="form-control")}}
+              {{ form.Fog_light.label }} {{ form.Fog_light(class="form-control")}}
+              {{ form.Rear_spoiler.label }} {{ form.Rear_spoiler(class="form-control")}}
+              {{ form.Cruise_control.label }} {{ form.Cruise_control(class="form-control")}}
+              {{ form.Power_Seats.label }} {{ form.Power_Seats(class="form-control")}}
+              {{ form.Central_lock.label }} {{ form.Central_lock(class="form-control")}}
+              {{ form.Alarm.label }} {{ form.Alarm(class="form-control")}}
+             
+
+          <div class="pri">
+               {{form.submit(class="form-control")}}
+          </div>
+    </div>
+      </div>
+        </div>
+          </div>
+          </div>
+     
+    </form>
+  </div>
+  </body>
+</html>
